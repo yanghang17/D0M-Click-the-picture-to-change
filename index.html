@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>DOM的使用</title>
+<meta content="charset=UTF-8">
+</head>
+<body>
+  <script type="text/javascript" src="script/20170309.js"></script>  //js的引用
+  <ul>
+    <li>
+      <a href="images/1.jpg" onclick="showpic(this); return false;">1picture</a>
+    </li>
+    <li>
+      <a href="images/2.jpg" onclick="showpic(this); return false;">2picture</a>
+    </li>
+    <li>
+      <a href="images/3.jpg" onclick="showpic(this); return false;">3picture</a>
+    </li>
+    <li>
+      <a href="images/4.jpg" onclick="showpic(this); return false;">4picture</a>
+    </li>
+  </ul>
+  <img src="images/5.jpg" alt="picture" id="picimg">
+</body>
+</html>
+<!--
+function showpic(whilepic){
+var picli = whilepic.getAttribute("href");//获取href属性"值"
+var picimg = document.getElementById("picimg");//获取显示位置id
+picimg.setAttribute("src",picli);//修改获取显示位置的src与获取到的href值
+}  
+-->
